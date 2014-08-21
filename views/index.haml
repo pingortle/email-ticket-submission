@@ -1,0 +1,62 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %link{:href => "./stylesheets/bootstrap.css", :rel => "stylesheet", :type => "text/css"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  %body
+    .container
+      .col-md-2
+      .col-md-8
+        %form.form-horizontal{:method => "post"}
+          %fieldset
+            / Form Name
+            %legend Submit a Ticket
+            / Text input
+            .form-group
+              %label.col-sm-3.control-label{:for => "location"} Location
+              .col-sm-9.controls
+                %input#location.input-medium.form-control{:name => "location", :placeholder => "Your location", :required => "", :type => "text"}/
+                %p.help-block Enter your location.
+            / Text input
+            .form-group
+              %label.col-sm-3.control-label{:for => "name"} Contact Name
+              .col-sm-9.controls
+                %input#name.input-medium.form-control{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
+                %p.help-block Enter your name.
+            / Text input
+            .form-group
+              %label.col-sm-3.control-label{:for => "phone"} Phone Number
+              .col-sm-9.controls
+                %input#phone.input-medium.form-control{:name => "phone", :placeholder => "Your phone number", :required => "", :type => "tel"}/
+                %p.help-block Enter your phone number.
+            / Text input
+            .form-group
+              %label.col-sm-3.control-label{:for => "email"} Email
+              .col-sm-9.controls
+                %input#email.input-medium.form-control{:name => "email", :placeholder => "Your email address", :required => "", :type => "email"}/
+                %p.help-block Enter your email address.
+            / Text input
+            .form-group
+              %label.col-sm-3.control-label{:for => "username"} Username
+              .col-sm-9.controls
+                %input#username.input-medium.form-control{:name => "username", :placeholder => "Your username", :required => "", :type => "text"}/
+                %p.help-block Enter your username.
+            / Password input
+            .form-group
+              %label.col-sm-3.control-label{:for => "computer"} Computer Name
+              .col-sm-9.controls
+                %input#computer.input-medium.form-control{:name => "computer", :placeholder => "Your computer name", :type => "text"}/
+                %p.help-block Enter your computer name.
+            / Text input
+            .form-group
+              %label.col-sm-3.control-label{:for => "callbacktime"} Callback Time
+              .col-sm-9.controls
+                %input#callbacktime.input-medium.form-control{:name => "callbacktime", :placeholder => "Best callback time", :type => "datetime-local"}/
+                %p.help-block Enter the best time for us to call you back.
+            / Textarea
+            .form-group
+              %label.col-sm-3.control-label{:for => "issue"} Issue
+              .col-sm-9.controls
+                %textarea#issue.form-control{:name => "issue"}
+          %button.btn.btn-default.pull-right{:type => "submit"} Submit This Ticket
+      .col-md-2
