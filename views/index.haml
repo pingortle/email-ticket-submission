@@ -58,5 +58,14 @@
               %label.col-sm-3.control-label{:for => "issue"} Issue
               .col-sm-9.controls
                 %textarea#issue.form-control{:name => "issue"}
+
+            / Captcha
+            .form-group
+              %label.col-sm-3.control-label{:for => "captcha"} Captcha
+              .col-sm-9.controls
+                %input#captcha.form-control{:name => "captcha", :type => "text"}
+                %p.help-block Enter the letters exactly as you see them in the image below.
+                %img{:src => "http://image.captchas.net/?client=#{CAPTCHA_USERNAME}&random=#{locals[:random]}"}
+
           %button.btn.btn-default.pull-right{:type => "submit"} Submit This Ticket
       .col-md-2

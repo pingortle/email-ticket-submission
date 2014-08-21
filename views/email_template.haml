@@ -1,0 +1,7 @@
+!!!
+%html{:lang => "en"}
+  %head
+  %body
+  - locals[:data].each do |k, v|
+    %h2= k
+    %p= v

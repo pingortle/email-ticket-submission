@@ -1,0 +1,14 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %link{:href => "./stylesheets/bootstrap.css", :rel => "stylesheet", :type => "text/css"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  %body
+    .container
+      .col-md-2
+      .col-md-8
+        %h1.success Success!
+        %p
+          Your ticket has been submitted.
+          %a{:href => "/"} Click here to submit another
+      .col-md-2
