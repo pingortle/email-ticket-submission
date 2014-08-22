@@ -1,0 +1,22 @@
+@import "bootstrap";
+
+.content-header {
+  margin-bottom: 32px;
+  padding: 8px;
+  border: 2px;
+  border-style: none solid solid solid;
+  @include border-bottom-radius(8px);
+  background-color: $gray-lighter;
+  img {
+    @include center-block();
+  }
+}
+
+.content-body {
+  padding: 8px;
+}
+
+.content-footer {
+  margin-top: 32px;
+  padding: 8px;
+}
