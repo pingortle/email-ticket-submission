@@ -1,0 +1,14 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %link{:href => "./stylesheets/main.css", :rel => "stylesheet", :type => "text/css"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  %body
+    .container
+      .col-md-2
+      .col-md-8
+        %h1.success Ticket Submission Failed
+        %p
+          There was a problem sending your ticket.
+          %a{:href => "/"} Click here try again.
+      .col-md-2

@@ -34,7 +34,7 @@ end
 
 post '/' do
   random = session[:random]
-  halt 403 if Captcha.get_text(CAPTCHA_SECRET, random) != params["captcha"]
+  halt(403, haml(:failure, :format => :html5)) if Captcha.get_text(CAPTCHA_SECRET, random) != params["captcha"]
   email = params[:email]
   name = params[:name]
 
