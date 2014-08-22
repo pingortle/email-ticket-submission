@@ -6,7 +6,7 @@
   border: 2px;
   border-style: none solid solid solid;
   @include border-bottom-radius(8px);
-  background-color: $gray-lighter;
+  background-color: $gray-light;
   img {
     @include center-block();
   }
