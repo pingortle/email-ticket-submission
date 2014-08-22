@@ -9,7 +9,7 @@
       .col-md-8
         .row.content-header
           - if LOGO_URL
-            %img{:src => LOGO_URL}
+            %img.img-responsive{:src => LOGO_URL}
         .row.content-body.well
           %form.form-horizontal{:method => "post"}
             %fieldset
@@ -69,7 +69,7 @@
                 .col-sm-9.controls
                   %input#captcha.form-control{:name => "captcha", :type => "text"}
                   %p.help-block Enter the letters exactly as you see them in the image below.
-                  %img{:src => "http://image.captchas.net/?client=#{CAPTCHA_USERNAME}&random=#{locals[:random]}"}
+                  %img.img-responsive{:src => "http://image.captchas.net/?client=#{CAPTCHA_USERNAME}&random=#{locals[:random]}"}
 
             %button.btn.btn-default.pull-right{:type => "submit"} Submit This Ticket
         .row.content-footer

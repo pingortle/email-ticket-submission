@@ -5,9 +5,12 @@ $icon-font-path: "fonts/bootstrap/";
 .content-header {
   margin-bottom: 32px;
   padding: 8px;
-  border: 2px;
+  padding-top: 16px;
+  border: 1px;
+  border-color: $gray;
   border-style: none solid solid solid;
   @include border-bottom-radius(8px);
+  @include box-shadow(inset 0 -1px 1px rgba(0,0,0,.25));
   background-color: $gray-light;
   img {
     @include center-block();
