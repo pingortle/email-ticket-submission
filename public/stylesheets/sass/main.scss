@@ -10,18 +10,19 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .logo.retina {
-    display: inline;
-    visibility: visible;
+    display: inline     !important;
+    visibility: visible !important;
   }
+
   .logo.no-retina {
-    display: none;
-    visibility: hidden;
+    display: none       !important;
+    visibility: hidden  !important;
   }
 }
 
 .retina {
-  display: none;
-  visibility: hidden;
+  display: none       !important;
+  visibility: hidden  !important;
 }
 
 .content-header {
@@ -34,6 +35,7 @@ only screen and (                min-resolution: 2dppx) {
   @include border-bottom-radius(8px);
   @include box-shadow(inset 0 -1px 1px rgba(0,0,0,.25));
   background-color: $gray-light;
+
   img {
     @include center-block();
   }
