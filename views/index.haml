@@ -25,7 +25,7 @@
               .form-group
                 %label.col-sm-3.control-label{:for => "name"} Contact Name
                 .col-sm-9.controls
-                  %input#name.input-medium.form-control{:name => "name", :placeholder => "Your name", :required => "", :type => "text"}/
+                  %input#name.input-medium.form-control{:name => "name", :placeholder => "Your name", :required => "", :type => "text", :autocorrect => "off", :autocapitalize => "words", :spellceck => "false"}/
                   %p.help-block Enter your name.
               / Text input
               .form-group
@@ -43,13 +43,13 @@
               .form-group
                 %label.col-sm-3.control-label{:for => "username"} Username
                 .col-sm-9.controls
-                  %input#username.input-medium.form-control{:name => "username", :placeholder => "Your username", :required => "", :type => "text"}/
+                  %input#username.input-medium.form-control{:name => "username", :placeholder => "Your username", :required => "", :type => "text", :autocorrect => "off", :autocapitalize => "none", :spellceck => "false"}/
                   %p.help-block Enter your username.
               / Password input
               .form-group
                 %label.col-sm-3.control-label{:for => "computer"} Computer Name
                 .col-sm-9.controls
-                  %input#computer.input-medium.form-control{:name => "computer", :placeholder => "Your computer name", :type => "text"}/
+                  %input#computer.input-medium.form-control{:name => "computer", :placeholder => "Your computer name", :type => "text", :autocorrect => "off", :autocapitalize => "none", :spellceck => "false"}/
                   %p.help-block Enter your computer name.
               / Text input
               .form-group
@@ -67,7 +67,7 @@
               .form-group
                 %label.col-sm-3.control-label{:for => "captcha"} Captcha
                 .col-sm-9.controls
-                  %input#captcha.form-control{:name => "captcha", :type => "text"}
+                  %input#captcha.form-control{:name => "captcha", :type => "text", :autocorrect => "off", :autocapitalize => "none", :spellcheck => "false"}
                   %p.help-block Enter the letters exactly as you see them in the image below.
                   %img.img-responsive{:src => "http://image.captchas.net/?client=#{CAPTCHA_USERNAME}&random=#{locals[:random]}"}
 
