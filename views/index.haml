@@ -9,7 +9,9 @@
       .col-md-8
         .row.content-header
           - if LOGO_URL
-            %img.img-responsive{:src => LOGO_URL}
+            %img.img-responsive.logo.no-retina{:src => LOGO_URL}
+          - if LOGO_URL_2X
+            %img.img-responsive.logo.retina{:src => LOGO_URL_2X}
         .row.content-body.well
           %form.form-horizontal{:method => "post"}
             %fieldset
