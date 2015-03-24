@@ -10,7 +10,7 @@
         .row.content-header
           - if LOGO_URL
             %img.img-responsive.logo{:src => LOGO_URL}
-          - else if LOGO_URL_2X
+          - if LOGO_URL_2X
             %img.img-responsive.logo.retina{:src => LOGO_URL_2X}
         .row.content-body.well
           %form.form-horizontal{:method => "post"}
